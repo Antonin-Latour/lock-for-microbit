@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="A8lCQPw|,Fx-|yG=S9N(" x="307" y="-389"><statement name="HANDLER"><block type="controls_if" id="VE2sejO2ko;A-n#ZV:q`"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=".s{5b7r0sP(myjFK)c!+"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="sonar_ping" id="2?*L?cFXe-$FdPsu?1x^"><field name="trig">DigitalPin.P2</field><field name="echo">DigitalPin.P2</field><field name="unit">PingUnit.Centimeters</field></block></value><value name="B"><shadow type="math_number" id="hMU[8,~X)ZS2][_$$AS="><field name="NUM">2</field></shadow></value></block></value><statement name="DO0"><block type="servoservosetangle" id=":rTl4mO{:,C*+*x)SmSa"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="H|Njz~EwOVKOWotu]dVC"><field name="angle">90</field></shadow></value><next><block type="device_clear_display" id="Ft{wl}{gb*{zGeNZjJ^#"><next><block type="basic_show_icon" id=")H@H7}{9;Vd/U6f]_x??"><field name="i">IconNames.Yes</field><next><block type="device_pause" id="$pGIV`AEa-aZx#Xo^nT6"><value name="pause"><shadow type="timePicker" id="6D2j$`gu*dKvyF(}w2em"><field name="ms">2000</field></shadow></value><next><block type="device_show_leds" id="K,p}LK9w}Kj0U)b~,]{."><field name="LEDS">`
+        . # # . . 
+        . . . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></next></block></statement></block></statement></block><block type="device_forever" id="}KaPwg`aLhPuTSSV[Z7)" x="1091" y="-380"><statement name="HANDLER"><block type="controls_if" id="ICt_99]E9gjtB99`IWD4"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="ngW?bHEF-]I%S#MX#VHQ"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="sonar_ping" id="L{OA`h]--VO-6KnyV$mc"><field name="trig">DigitalPin.P2</field><field name="echo">DigitalPin.P2</field><field name="unit">PingUnit.Centimeters</field></block></value><value name="B"><shadow type="math_number" id="gA9fZ#Eg0sR4f4l^QkrD"><field name="NUM">2</field></shadow></value></block></value><statement name="DO0"><block type="basic_show_icon" id="}KJb=WC~WVE7xMY1vFli"><field name="i">IconNames.No</field><next><block type="servoservosetangle" id="8d%![aVdZbeFNZo41H%|"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="Z7vdbN-w_yvKdV4$q17="><field name="angle">0</field></shadow></value><next><block type="device_clear_display" id="8*6.u.)UK!D*#}WbCJ=%"><next><block type="device_show_leds" id="D(W@nc,yf}esR(cE7otH"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></statement></block></statement></block><block type="pxt-on-start" id="O0!H,gpiKMt?eHvHaX8T" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="$@t-[7PO~MVlt,SR]!KN"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="basic_show_icon" id=".mV$x1#2BE]3uizd,=Dg"><field name="i">IconNames.SmallSquare</field><next><block type="basic_show_icon" id="9*n/mU|x(4M5%UPpSO$*"><field name="i">IconNames.Square</field><next><block type="device_show_leds" id="5irYXz*r6:h:`[Dj$m~8"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="IOw,KAv=*XbsX9.mE|J#" x="673" y="175"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="controls_if" id="LpaLR8VZYPs*|Cf+ttq*"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="input_logo_is_pressed" id="Z_U]/XaI=OYaTMK]k$xf"/></value><statement name="DO0"><block type="servoservosetangle" id="4@8^5d/Mgdh1XwRjS~r5"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="wJ5smD2,p!|)+.{^Q9H9"><field name="angle">90</field></shadow></value><next><block type="device_clear_display" id="QxLo=rZR`1e]RT4Xm4|*"><next><block type="basic_show_icon" id="7.3h8/x-Oc@1cp:U^v7,"><field name="i">IconNames.Yes</field><next><block type="device_pause" id="*J-4z(sKYKi:1oE$kvo`"><value name="pause"><shadow type="timePicker" id="K~4ZCe|#]ksLg@Mawsf2"><field name="ms">2000</field></shadow></value><next><block type="device_show_leds" id="xwGRBid[(bi4{{}*rqiY"><field name="LEDS">`
+        . # # . . 
+        . . . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="basic_show_icon" id="Cr`Tk!MwgMdPyd~F#Ylr"><field name="i">IconNames.No</field><next><block type="servoservosetangle" id="6i=MQI-K=Ce`4KZ.CQa|"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="$p!H16Nk}phRvwYpKUvr"><field name="angle">0</field></shadow></value><next><block type="device_clear_display" id="$+2P;S?l:c!}Pytq,JmK"><next><block type="device_show_leds" id="KZi_cIvVi@KvG@yUmHs#"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></statement></block></statement></block><block type="device_button_event" id="7L/3Q{zR2~ydiB~ZT(}v" x="340" y="274"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="controls_if" id="5hg4ig9yr*1._UA,FU[n"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="input_logo_is_pressed" id="(dwB5U{@_Nc%T82EjM_X"/></value><statement name="DO0"><block type="servoservosetangle" id="S:l2F?!K!Q{bL,OiqW9{"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="7V6s9VMkMR5JKMwpVs^5"><field name="angle">90</field></shadow></value><next><block type="device_clear_display" id="b7I0c;_F~WNW:OCU80!?"><next><block type="basic_show_icon" id=")f6Ex=;DGQ2;;f|ha6V5"><field name="i">IconNames.Yes</field><next><block type="device_pause" id="M~lZ_3St[%EBZg(Gk/__"><value name="pause"><shadow type="timePicker" id="mqURqo)O(f{R8zK_^3Ty"><field name="ms">2000</field></shadow></value><next><block type="device_show_leds" id="1@gA%Y4m9uP_opFArz(U"><field name="LEDS">`
+        . # # . . 
+        . . . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="basic_show_icon" id="k+$.S{HG/xyI0Ksqa:nq"><field name="i">IconNames.No</field><next><block type="servoservosetangle" id="6?^4p5`j)hV^bFSRRL8B"><field name="servo">servos.P0</field><value name="degrees"><shadow type="protractorPicker" id="xX/3blFsXZ#9+?Z$}Q+["><field name="angle">0</field></shadow></value><next><block type="device_clear_display" id="$x!kWq7b1~Cz0IU3/}u}"><next><block type="device_show_leds" id="2haT$kv(ePQ=n@0LarFR"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></next></block></next></block></statement></block></statement></block></xml>
